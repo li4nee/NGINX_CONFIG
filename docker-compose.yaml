@@ -1,0 +1,28 @@
+services:
+  app1:
+    build: .
+    ports:
+      - "3001:3001"
+    environment:
+      - APP_NAME=app1
+    volumes:
+      - .:/app
+
+
+  app2:
+    build: .
+    ports:
+      - "3002:3002"
+    environment:
+      - APP_NAME=app2
+    volumes:
+      - .:/app
+
+  app3:
+    build: .
+    ports:
+      - "3003:3003"
+    environment:
+      - APP_NAME=app3
+    volumes:
+      - .:/app
